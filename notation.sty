@@ -1,0 +1,109 @@
+\usepackage[a4paper]{geometry}
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times,pifont}
+
+\usepackage{hyperref,url}
+
+\usepackage{booktabs}
+\usepackage{microtype}
+
+\usepackage{tabularx}
+
+\usepackage{empheq}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage{graphicx}
+\graphicspath{{./figures/}}
+\DeclareGraphicsRule{.1}{mps}{*}{}
+\usepackage{subcaption}
+
+\usepackage{amsmath,amsthm,amsfonts,nicefrac,amssymb,bm,stmaryrd}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}{Remark}[theorem]
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argsup}{arg\,sup}
+\DeclareMathOperator*{\arginf}{arg\,inf}
+\DeclareMathOperator*{\vect}{\mathrm{vec}}
+\DeclareMathOperator*{\diag}{\mathrm{diag}}
+\DeclareMathOperator*{\rank}{\mathrm{rank}}
+\DeclareMathOperator*{\trace}{\mathrm{tr}}
+
+\DeclareMathOperator*{\laplace}{\Delta}
+\newcommand{\grad}{\nabla}
+\renewcommand{\div}{\textrm{div}}
+\newcommand{\T}{\top}
+
+
+\newcommand{\todo}{{\color{red} TODO...}}
+\newcommand{\checkeq}[1]{{\color{red} #1}}
+
+\newcommand{\meas}[1]{\mathrm{#1}}
+\newcommand{\hmeas}[1]{\hat{\meas{#1}}}
+\newcommand{\dmeas}[1]{\mathrm{d}\meas{#1}}
+\newcommand{\supp}{\mathrm{Supp}}
+
+
+\usepackage{mathrsfs}
+\newcommand{\G}{\mathsf{G}}
+\newcommand{\U}{\mathsf{U}}
+\newcommand{\V}{\mathsf{V}}
+\newcommand{\W}{\mathsf{W}}
+\newcommand{\E}{\mathsf{E}}
+\newcommand{\X}{\mathsf{X}}
+\newcommand{\Z}{\mathsf{Z}}
+%\newcommand{\A}{\mathsf{A}}
+%\newcommand{\C}{\mathsf{C}}
+%\newcommand{\B}{\mathsf{B}}
+\newcommand{\Y}{\mathsf{Y}}
+\newcommand{\Q}{\mathsf{Q}}
+\newcommand{\N}{\mathsf{N}}
+\newcommand{\R}{\mathsf{R}}
+\newcommand{\SSS}{\mathsf{S}}
+\newcommand{\LL}{\mathsf{L}}
+\newcommand{\F}{\mathsf{F}}
+
+\newcommand{\defeq}{\overset{\text{\tiny def}}{=}}
+
+\newcommand{\iverson}[1]{\llbracket #1 \rrbracket}
+\newcommand{\indicator}[1]{{\bm 1}_{#1}}
+
+\usepackage{xspace}
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\bmv@onedotaux}
+\def\bmv@onedotaux{\ifx\@let@token.\else.\null\fi\xspace}
+%
+\def\eg{\emph{e.g}\onedot} \def\Eg{\emph{E.g}\onedot}
+\def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
+\def\cf{\emph{c.f}\onedot} \def\Cf{\emph{C.f}\onedot}
+\def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot}
+\def\wrt{w.r.t\onedot} \def\Wrt{W.r.t\onedot}
+\def\dof{d.o.f\onedot}
+\def\iid{i.i.d\onedot}
+\def\psd{p.s.d\onedot}
+\def\as{a.s\onedot}
+\def\etal{\emph{et al}\onedot}
+\def\bigoh{\mathcal{O}}
+\makeatother
+
+\usepackage[ruled,algo2e]{algorithm2e}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+\usepackage{soul}
+\usepackage{float}
+
+\usepackage{orcidlink}
