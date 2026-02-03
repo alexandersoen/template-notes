@@ -1,6 +1,23 @@
-\usepackage{amsmath,amsthm,amsfonts,nicefrac,amssymb,bm,stmaryrd}
-\usepackage[capitalize,noabbrev]{cleveref}
+\usepackage{amsmath,amsfonts,nicefrac,amssymb,bm,stmaryrd}
 
+\frenchspacing
+
+% Theorem styles
+% Citing: Order matters amsthm,amsmath -> cleveref -> newtheorem...
+% Sometimes doesn't work, thmtools apparently fixes this.
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}{Remark}[theorem]
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[theorem]
 
 % Optimization
 \DeclareMathOperator*{\argmax}{arg\,max}
@@ -49,15 +66,3 @@
 \def\etal{\emph{et al}\onedot}
 \def\bigoh{\mathcal{O}}
 \makeatother
-
-% Theorem styles
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{remark}{Remark}[theorem]
-
-\theoremstyle{definition}
-\newtheorem{example}{Example}[section]
-
