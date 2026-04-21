@@ -1,10 +1,11 @@
-\usepackage{amsmath,amsfonts,nicefrac,amssymb,bm,stmaryrd}
+\usepackage{amsmath,amsfonts,nicefrac,stmaryrd}
 
 \frenchspacing
 
 % Theorem styles
 % Citing: Order matters amsthm,amsmath -> cleveref -> newtheorem...
 % Sometimes doesn't work, thmtools apparently fixes this.
+\let\openbox\relax
 \usepackage{amsthm}
 \usepackage{thmtools}
 \usepackage[capitalise,noabbrev]{cleveref}
