@@ -4,6 +4,8 @@ MAINFILE = main
 
 all:
 	pdflatex $(MAINFILE)
+	bibtex $(MAINFILE)
+	pdflatex $(MAINFILE)
 	pdflatex $(MAINFILE)
 
 .PHONY: clean
